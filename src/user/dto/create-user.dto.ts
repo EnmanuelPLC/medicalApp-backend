@@ -1,16 +1,16 @@
-import { IsNotEmpty } from 'class-validator';
-import { UserType } from '../user.entity';
+import { IsNotEmpty } from "class-validator";
+import { UserType } from "../user.entity";
 
 export class CreateUserDto {
-  @IsNotEmpty()
-  name: string;
+    @IsNotEmpty()
+    name: string;
 
-  @IsNotEmpty()
-  lastname: string;
+    @IsNotEmpty()
+    lastname: string;
 
-  @IsNotEmpty()
-  password: string;
+    @IsNotEmpty()
+    password: string;
 
-  @IsNotEmpty()
-  type: UserType;
+    @IsNotEmpty()
+    type: UserType;
 }

@@ -1,9 +1,9 @@
-import { IsNotEmpty } from 'class-validator';
+import { IsNotEmpty } from "class-validator";
 
 export class UpdateRecipeDto {
-  @IsNotEmpty()
-  medicine: string;
+    @IsNotEmpty()
+    medicine: string;
 
-  @IsNotEmpty()
-  useDescription: string;
+    @IsNotEmpty()
+    useDescription: string;
 }

@@ -1,13 +1,13 @@
-import { IsNotEmpty } from 'class-validator';
-import { UserType } from '../user.entity';
+import { IsNotEmpty } from "class-validator";
+import { UserType } from "../user.entity";
 
 export class UpdateUserDto {
-  @IsNotEmpty()
-  name: string;
+    @IsNotEmpty()
+    name: string;
 
-  @IsNotEmpty()
-  lastname: string;
+    @IsNotEmpty()
+    lastname: string;
 
-  @IsNotEmpty()
-  type: UserType;
+    @IsNotEmpty()
+    type: UserType;
 }

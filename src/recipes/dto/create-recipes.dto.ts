@@ -1,17 +1,17 @@
-import { IsNotEmpty } from 'class-validator';
+import { IsNotEmpty } from "class-validator";
 
 export class CreateRecipeDto {
-  @IsNotEmpty()
-  doctorId: string;
+    @IsNotEmpty()
+    doctorId: string;
 
-  @IsNotEmpty()
-  pacientId: string;
+    @IsNotEmpty()
+    pacientId: string;
 
-  @IsNotEmpty()
-  date: string;
+    @IsNotEmpty()
+    date: string;
 
-  @IsNotEmpty()
-  medicine: string;
+    @IsNotEmpty()
+    medicine: string;
 
-  useDescription: string;
+    useDescription: string;
 }
